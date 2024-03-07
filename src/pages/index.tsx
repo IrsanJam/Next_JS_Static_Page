@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import MetaHead from "./metahead";
+import Image from "next/image";
 
 interface typeProduct {
   id: string;
@@ -49,7 +50,7 @@ export default function Home() {
           {products.map((value: typeProduct) => (
             <div className="border-2 border-slate-400 border-opacity-20 rounded-md flex  p-3  shadow-md gap-5" key={value.id}>
               <div className="flex-col self-center">
-                <img src={value.image} alt={value.title} width={100} />
+                <Image src={value.image} alt={value.title} width={100} height={100} />
                 <span>⭐{value.rating.rate}</span>
               </div>
               <div className="flex-col p-3">

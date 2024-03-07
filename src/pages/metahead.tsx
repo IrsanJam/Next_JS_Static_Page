@@ -8,10 +8,10 @@ interface seoType {
 }
 
 const MetaHead = (props: seoType) => {
-  const { title, description, image = "https://localhost:3000/image/adidas-svgrepo-com.svg" } = props;
+  const { description, image = "https://localhost:3000/image/adidas-svgrepo-com.svg" } = props;
   return (
     <Head>
-      <title>{title} - Irsan</title>
+      <title>Buy Anything Here</title>
       <meta name="description" content="Ini adalah halaman about yang sangat bagus"></meta>
       <meta property="og:title" content={description} />
       <meta property="og:description" content="Get from SEO newbie to SEO pro in 8 simple steps." />

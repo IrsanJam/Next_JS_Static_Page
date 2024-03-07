@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 const Footer: React.FC = () => {
   return (
@@ -6,7 +8,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="text-center md:text-left mb-4 md:mb-0">
           <div className="div px-7 py-3 rounded-lg bg-white flex justify-center items-center">
-            <img src={`/image/adidas-svgrepo-com.svg`} alt="adidas" width={50} />
+            <Image src={`/image/adidas-svgrepo-com.svg`} alt="adidas" height={50} width={50} />
           </div>
         </div>
         <div className="flex flex-wrap justify-center md:justify-start font-semibold">
@@ -24,15 +26,15 @@ const Footer: React.FC = () => {
           </a>
         </div>
         <div className="flex flex-wrap justify-center md:justify-end">
-          <a href="#" className="mr-4 mb-2 md:mb-0">
-            <img width="48" height="48" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new" />
-          </a>
-          <a href="#" className="mr-4 mb-2 md:mb-0">
-            <img width="48" height="48" src="https://img.icons8.com/fluency/48/twitter.png" alt="twitter" />{" "}
-          </a>
-          <a href="#" className="mr-4 mb-2 md:mb-0">
-            <img width="48" height="48" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new" />{" "}
-          </a>
+          <Link href="#" className="mr-4 mb-2 md:mb-0">
+            <Image width="48" height="48" src="/image/facebook-new.png" alt="facebook-new" />
+          </Link>
+          <Link href="#" className="mr-4 mb-2 md:mb-0">
+            <Image width="48" height="48" src="/image/twitter.png" alt="twitter" />{" "}
+          </Link>
+          <Link href="#" className="mr-4 mb-2 md:mb-0">
+            <Image width="48" height="48" src="/image/instagram-new.png" alt="instagram-new" />{" "}
+          </Link>
         </div>
       </div>
     </footer>

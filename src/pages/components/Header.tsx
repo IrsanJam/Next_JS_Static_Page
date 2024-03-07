@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const Header = () => {
   const router = useRouter();
@@ -12,7 +13,7 @@ const Header = () => {
       <div className="bg-white text-black py-5 px-8 flex font-semibold z-20  justify-between shadow-md fixed w-full">
         <div>
           <Link href={"/"}>
-            <img src="/image/adidas-svgrepo-com.svg" alt="Adidas Logo" width={50} />
+            <Image src="/image/adidas-svgrepo-com.svg" alt="Adidas Logo" width={50} height={50} />
           </Link>
         </div>
         <div className="gap-5 justify-center items-center  hidden md:flex">
@@ -25,7 +26,7 @@ const Header = () => {
         </div>
 
         <div onClick={() => setShowNav(!showNav)} className="block md:hidden cursor-pointer">
-          <img src="/image/hamburger-menu-mobile-svgrepo-com.svg" alt="hamburger" width={40} className="h-full" />
+          <Image src="/image/hamburger-menu-mobile-svgrepo-com.svg" alt="hamburger" width={40} height={40} className="h-full" />
         </div>
       </div>
 
