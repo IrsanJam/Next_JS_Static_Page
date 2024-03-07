@@ -1,5 +1,6 @@
 import React from "react";
 import MetaHead from "./metahead";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -14,7 +15,7 @@ const About = () => {
             <div className="border-t border-gray-200 px-4 py-5 sm:p-0">
               <div className="flex flex-wrap">
                 <div className="w-full sm:w-1/2 p-4">
-                  <img src="https://png.pngtree.com/thumb_back/fh260/background/20210902/pngtree-outdoor-office-building-in-the-city-during-the-daytime-image_790830.jpg" alt="Company" className="rounded-lg" />
+                  <Image src="/image/company.jpg" width={1000} height={1000} alt="Company" className="rounded-lg" />
                 </div>
                 <div className="w-full sm:w-1/2 p-4">
                   <p className="text-gray-700 mb-4 text-justify">
